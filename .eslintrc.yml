@@ -1,0 +1,21 @@
+---
+root: true
+extends:
+  - standard-with-typescript
+  - prettier
+  - plugin:jest/recommended
+  - plugin:eslint-comments/recommended
+  - plugin:@typescript-eslint/recommended
+plugins:
+  - prettier
+  - eslint-comments
+rules:
+  prettier/prettier: error
+env:
+  es6: true
+  node: true
+parser: '@typescript-eslint/parser'
+parserOptions:
+  ecmaVersion: 2020
+  sourceType: module
+  project: ./tsconfig.eslint.json
